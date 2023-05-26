@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+html {
+    color-scheme: dark light;
+
+}
+
+.encase{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding-top: 12%;
+    font-family: "Quicksand", sans-serif;
+    background-image: url("/Images/field.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #0E4C92; 
+    color: black;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 440px;
+    padding: 10px 0px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    
+}
+
+.temp, .description, .humidity, .speed{
+    margin-bottom: 0.4em;
+
+  }
+
+
+.description {
+    text-transform: capitalize;
+}
+
+
+.search-bar {
+    min-width: 275px;
+    font-size: 105%;
+    border-radius: 10px;
+    background: #ECECEC;
+
+}
+
+button{
+
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #0E4C92 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+    line-height: 0.5;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    font-size: 18px;
+    border-radius: 10px;
+  
+
+  
+}
+
+button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #003151 0 -3px 0 inset;
+    transform: translateY(-2px);
+  
+  }
+
+  button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  
+  }
+
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+ 
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      display: flex;
+      align-items: center;
+      background-color: #0E4C92; 
+      color: black;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 340px;
+      padding: 10px 0px;
+      box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+      
+  }
+  
+  
+  .search-bar {
+    min-width: 105px;
+    font-size: 105%;
+    border-radius: 10px;
+    background: #ECECEC;
+  
+  }
+  
+  }
